@@ -1,10 +1,10 @@
 #!/usr/bin/python3
-''' Return a list of lists of integers representing the Pascal's triangle of n '''
+''' Show list of lists of integers representing the Pascal's triangle of n '''
 
 def pascal_triangle(n):
     '''
-    create a list of lists of integers representing
-    the Pascal's triangle of a given integer.
+    Create a list of lists of integers representing
+    the Pascal's triangle of a given integer
     '''
     # return an empty array for n less than 0
     if n <= 0:
