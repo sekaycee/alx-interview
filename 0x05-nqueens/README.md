@@ -10,10 +10,10 @@ This is most efficiently solved using a backtracking algorithm. Backtracking is 
 
 `nqueens` N where N is the number of queens. - N must be an integer greater or equal to 4 - the program prints every possible solution to the problem in the format shown below
 
-'''
+```
 $ ./0-nqueens 4
 [[0, 1], [1, 3], [2, 0], [3, 2]]
 [[0, 2], [1, 0], [2, 3], [3, 1]]
-'''
+```
 
 Each inner list represents the coordinates of a queen in the NxN chessboard.
