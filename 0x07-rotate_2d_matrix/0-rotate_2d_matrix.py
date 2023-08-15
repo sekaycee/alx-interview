@@ -9,9 +9,9 @@ def rotate_2d_matrix(matrix):
         offset = 0
         i = rows - 1 - row
         for col in range(row, i):
-            top = matrix[row][col]
+            tmp = matrix[row][col]
             matrix[row][col] = matrix[i - offset][row]
             matrix[i - offset][row] = matrix[i][i - offset]
             matrix[i][i - offset] = matrix[col][i]
-            matrix[col][i] = top
+            matrix[col][i] = tmp
             offset += 1
