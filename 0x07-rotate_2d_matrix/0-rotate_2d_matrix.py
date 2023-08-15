@@ -3,15 +3,15 @@
 
 
 def rotate_2d_matrix(matrix):
-    ''' Given an n x n 2D matrix, rotate it 90 degrees clockwise. '''
+    ''' rotate a given n x n 2d matrix by 90 degrees clockwise. '''
     rows = len(matrix)
     for row in range(int(rows / 2)):
         offset = 0
         i = rows - 1 - row
-        for column in range(row, i  ):
-            top = matrix[row][column]
-            matrix[row][column] = matrix[i - offset][row]
+        for col in range(row, i  ):
+            top = matrix[row][col]
+            matrix[row][col] = matrix[i - offset][row]
             matrix[i - offset][row] = matrix[i][i - offset]
-            matrix[i][i - offset] = matrix[column][i]
-            matrix[column][i] = top
+            matrix[i][i - offset] = matrix[col][i]
+            matrix[col][i] = top
             offset += 1
